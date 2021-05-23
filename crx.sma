@@ -50,8 +50,8 @@ stock FormatString(data[], len, space, maxlen){
 	
 	spaceid = ((maxlen-length) + space)
 
-	while (spaceid > 3) { add(data, len, "  ", 4); spaceid -= 4; }
-	while (spaceid > 2) { add(data, len, "  ", 3); spaceid -= 3; }
+	while (spaceid > 3) { add(data, len, "   ", 4); spaceid -= 4; }
+	while (spaceid > 2) { add(data, len, "   ", 3); spaceid -= 3; }
 	while (spaceid > 1) { add(data, len, "  ", 2); spaceid -= 2; }
 	if (spaceid == 1) add(data, len, " ", 1);
 }
